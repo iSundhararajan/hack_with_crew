@@ -1,4 +1,4 @@
-function initialize() {
+function initializeMap() {
 
 	var mapOptions, map, marker, searchBox, city,
 		infoWindow = '',
@@ -58,6 +58,7 @@ function initialize() {
 			bounds = new google.maps.LatLngBounds(),
 			i, place, lat, long, resultArray,
 			addresss = places[0].formatted_address;
+			console.log(bounds)
 
 		for( i = 0; place = places[i]; i++ ) {
 			bounds.extend( place.geometry.location );
