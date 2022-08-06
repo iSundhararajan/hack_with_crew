@@ -1,4 +1,4 @@
-function initMap() {
+function initializeMap() {
 
 	var mapOptions, map, marker, searchBox, city,
 		infoWindow = '',
