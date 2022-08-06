@@ -54,10 +54,12 @@ function initializeMap() {
 	 * When the place is changed on search box, it takes the marker to the searched location.
 	 */
 	google.maps.event.addListener( searchBox, 'places_changed', function () {
+
 		var places = searchBox.getPlaces(),
 			bounds = new google.maps.LatLngBounds(),
 			i, place, lat, long, resultArray,
 			addresss = places[0].formatted_address;
+			console.log(bounds)
 
 		for( i = 0; place = places[i]; i++ ) {
 			bounds.extend( place.geometry.location );
