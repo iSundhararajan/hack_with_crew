@@ -55,7 +55,7 @@ function initializeMap() {
 	 */
 	google.maps.event.addListener( searchBox, 'places_changed', function () {
 
-		var places = searchBox.getPlaces(),
+	var places = searchBox.getPlaces(),
 			bounds = new google.maps.LatLngBounds(),
 			i, place, lat, long, resultArray,
 			addresss = places[0].formatted_address;
