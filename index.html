@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Google Maps API  </title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <h1> Google maps</h1>
+        <label for="">Address: <input id="map-search" class="controls" type="text" placeholder="Search Box" size="104"></label><br>
+        <label for="">Lat: <input type="text" class="latitude"></label>
+        <label for="">Long: <input type="text" class="longitude"></label>
+        <label for="">City <input type="text" class="reg-input-city" placeholder="City"></label>
+        
+        <div id="map-canvas"></div>
+
+        <script async
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYEW9ZjVHXt6CLeKAYESj5Vi_lXbFN6ps&callback=initMap">
+        </script>
+
+ 
+         <script src="/script.js"></script> 
+    </body>
+</html>
+
