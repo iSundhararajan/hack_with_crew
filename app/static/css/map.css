@@ -4,3 +4,34 @@
     height: 100vh;
     border-radius: 3px;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: white;
+}
+
+.about img{
+    height: auto;
+    width: 420 px;
+}
+
+.about-text{
+    width: 550px;
+
+}
+
+.main{
+    width: 1130 px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
