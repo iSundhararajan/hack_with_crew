@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../static/css/map.css" />
+  <link rel="stylesheet" href="../static/css/contact.css" />
   <title>Contact Us</title>  
   </head>
   <br>
@@ -21,39 +21,54 @@
     </div>
 </nav>
     <main style="background-color: white;">
-      <h1 style>Contact Us</h1>
-          <p> If you come across any hackathons or want to talk to us, fill out the form below!</p>
-        <section class="Contact">
-            
-            <form class="form">
-              <fieldset style="background-color: #FFD766;">
-                <div class="fields-container">
-                  
-                  <div class="fields">
-                    <label>Full Name</label>
-                    <input class="input-text" type="text" placeholder="Full Name" />
-                  </div>
+      <div class="contain">
+
+        <div class="wrapper">
       
-      
-                  <div class="fields">
-                    <label>Email</label>
-                    <input class="input-text" type="email" placeholder="Email" />
-                  </div>
-                      
-                  <div class="fields">
-                    <label>Reason</label>
-                    <textarea class="input-text"></textarea>
-                  </div>
-                </div>
-                <br>
-               
-                <div class="align-center flex">
-                  <button class="button w-100" type="submit">Submit</button>
-                </div>
-              </fieldset>
+          <div class="form">
+            <h4>GET IN TOUCH</h4>
+            <h2 class="form-headline">Send us a message</h2>
+            <form id="submit-form" action="">
+              <p>
+                <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                <small class="name-error"></small>
+              </p>
+              <p>
+                <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                <small class="name-error"></small>
+              </p>
+              <p class="full-width">
+                <input id="company-name" class="form-input" type="text" placeholder="Company Name*" required>
+                <small></small>
+              </p>
+              <p class="full-width">
+                <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                <small></small>
+              </p>
+              <p class="full-width">
+                <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about HackTheMap's services.
+              </p>
+              <p class="full-width">
+                <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                <button class="reset-btn" onclick="reset()">Reset</button>
+              </p>
             </form>
-          </section> 
+          </div>
+      
+          <div class="contacts contact-wrapper">
+      
+            <ul>
+              <li>Have any questions or business inquiries? <span class="highlight-text-grey">
+                  </span> Feel free to reach out to HackTheMap staff.</li>
+              <span class="hightlight-contact-info">
+                <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> hackthemap@demo.com</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+123 456 7890</span></li>
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
-   
+    <script src="../static/js/contact.js"></script>
   </body>
 </html>
