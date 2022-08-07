@@ -37,6 +37,23 @@ def map():
     info = data["data"]
     return render_template('mymap.html', info=info, url=os.getenv("URL"), API_KEY=os.getenv("API_KEY"))
 
+
+# Route for the account page
+@app.route('/account')
+def account():
+    return render_template('account.html', url=os.getenv("URL"))
+
+# Route for the contact page
+@app.route('/contact')
+def contact():
+    return render_template('contactus.html', url=os.getenv("URL"))
+
+
+# Route for the goal page
+@app.route('/goal')
+def goal():
+    return render_template('goals.html', url=os.getenv("URL"))
+
 # Route for handling 404 errors
 @app.errorhandler(404)
 def not_found(e):
