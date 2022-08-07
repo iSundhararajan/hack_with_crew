@@ -10,42 +10,18 @@
     </head>
 <body>
   <script>
-    let countries = [];
+    let places = [];
+    let API_KEY = '{{ API_KEY }}';
   </script>
   {% for place in info %}
   {% if place['mode'] == "In-Person Only" %}
     <script>
-        geocode("{{ place['loc'] }}", "{{ API_KEY }}", countries);
-
-        // find long and lat coordinates of locations
-        function geocode(place, myapi, countries){
-            axios.get('https://maps.googleapis.com/maps/api/geocode/json',{
-                params:{
-                    address:place,
-                    key:myapi,
-                }
-            })
-            .then(function(response){
-                // Log full response
-                console.log(response);
-
-                // long and lat
-                var lati = response.data.results[0].geometry.location.lat;
-                var longit = response.data.results[0].geometry.location.lng;
-                countries.push({
-                    lat: lati,
-                    long: longit
-                });
-            })
-            .catch(function(error){
-                console.log(error);
-            });
-        }
+        places.push("{{ place['loc'] }}");
     </script>
   {% endif %}
   {% endfor %}
   <div id="googleMap">
-  
+
   </div>
 <script src="../static/js/mscript.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key={{ API_KEY }}&callback=Mapping"></script>
