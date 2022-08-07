@@ -1,4 +1,4 @@
-function Mapping() {
+function initMap() {
     var mapProp = { // map view begins zoomed out
       center: new google.maps.LatLng(0, 0),
       zoom: 3,
@@ -10,7 +10,18 @@ function Mapping() {
                 position: new google.maps.LatLng(lat, long),
                 map: map
             });
-            addInfoWindow(marker, "content");
+            const content = '<div id="content">' +
+            '<div id="siteNotice">' +
+            "</div>" +
+            '<h1 id="firstHeading" class="firstHeading">'+ countries[i].event +'</h1>' +
+            '<div id="bodyContent">' +
+            "<h4>Location: " + countries[i].location +'</h4>' +
+            "<h4>Date: " + countries[i].date +'</h4>' +
+            '<h4>More information: <a href="'+ countries[i].link + '">Take me to their website!</a>' +
+            "</h4>" +
+            "</div>" +
+            "</div>"
+            addInfoWindow(marker, content);
         })
     }
 
@@ -25,6 +36,7 @@ function Mapping() {
     }
 }
 
+// find long and lat coordinates of locations
 function geocode(place, callback){
     axios.get('https://maps.googleapis.com/maps/api/geocode/json',{
         params:{
