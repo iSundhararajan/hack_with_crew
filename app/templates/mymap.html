@@ -11,7 +11,7 @@
 <body>
   <script>
     let places = [];
-    let API_KEY= '{{ API_KEY }}';
+    let API_KEY = '{{ API_KEY }}';
   </script>
   {% for place in info %}
   {% if place['mode'] == "In-Person Only" %}
@@ -21,7 +21,7 @@
   {% endif %}
   {% endfor %}
   <div id="googleMap">
-  
+
   </div>
 <script src="../static/js/mscript.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key={{ API_KEY }}&callback=initMap" defer></script>

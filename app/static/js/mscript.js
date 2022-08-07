@@ -10,6 +10,7 @@ function initMap() {
                 position: new google.maps.LatLng(lat, long),
                 map: map
             });
+<<<<<<< HEAD
             const content = '<div id="content">' +
             '<div id="siteNotice">' +
             "</div>" +
@@ -22,6 +23,9 @@ function initMap() {
             "</div>" +
             "</div>"
             addInfoWindow(marker, content);
+=======
+            addInfoWindow(marker, "content");
+>>>>>>> d3f5387fb51112745adf793fd4c271c0fb5f5a09
         })
     }
 
