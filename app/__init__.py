@@ -8,7 +8,7 @@ load_dotenv()  # Loads the environment variables from the .env file
 app = Flask(__name__)
 
 os.getenv("API_KEY")
-def load_profiles_from_json(filename) -> dict:
+def load_info_from_json(filename) -> dict:
     """
     Loads profile data by parsing the JSON file provided.
 
@@ -30,7 +30,7 @@ def index():
     """
     return render_template('index.html', title="HackTheMap", url=os.getenv("URL"))
 
-# Route for the profile page
+# Route for the map page
 @app.route('/map')
 def map():
     """
@@ -38,8 +38,8 @@ def map():
     
     If profile could not be found, redirects to the landing page.
     """
-    data = load_profiles_from_json('data.json')
-    info = data["emilie"]
+    data = load_info_from_json('run_results.json')
+    info = data["data"]
     return render_template('mymap.html', info=info, url=os.getenv("URL"), API_KEY=os.getenv("API_KEY"))
 
 # Route for handling 404 errors
