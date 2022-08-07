@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Map</title>
+        <link rel="stylesheet" href="../static/css/map.css" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+<body>
+  <script>
+    let countries = [];
+  </script>
+  {% for place in info %}
+  {% if place['mode'] == "In-Person Only" %}
+    <script>
+        geocode("{{ place['loc'] }}", "{{ API_KEY }}", countries);
+
+        // find long and lat coordinates of locations
+        function geocode(place, myapi, countries){
+            axios.get('https://maps.googleapis.com/maps/api/geocode/json',{
+                params:{
+                    address:place,
+                    key:myapi,
+                }
+            })
+            .then(function(response){
+                // Log full response
+                console.log(response);
+
+                // long and lat
+                var lati = response.data.results[0].geometry.location.lat;
+                var longit = response.data.results[0].geometry.location.lng;
+                countries.push({
+                    lat: lati,
+                    long: longit
+                });
+            })
+            .catch(function(error){
+                console.log(error);
+            });
+        }
+    </script>
+  {% endif %}
+  {% endfor %}
+  <div id="googleMap">
+  
+  </div>
+<script src="../static/js/mscript.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ API_KEY }}&callback=Mapping"></script>
+</body>
+</html>
