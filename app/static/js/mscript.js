@@ -1,11 +1,11 @@
 function initMap() {
     var mapProp = { // map view begins zoomed out
-      center: new google.maps.LatLng(0, 0),
-      zoom: 3,
+      center: new google.maps.LatLng(46.3333, -63.5000),
+      zoom: 4,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
     for (let i = 0; i < places.length; i++) {
-        geocode(places[i], ({ lat, long }) => {
+        geocode(places[i][0], ({ lat, long }) => {
             var marker = new google.maps.Marker({ // add a marker for each country visited
                 position: new google.maps.LatLng(lat, long),
                 map: map
@@ -13,11 +13,11 @@ function initMap() {
             const content = '<div id="content">' +
             '<div id="siteNotice">' +
             "</div>" +
-            '<h1 id="firstHeading" class="firstHeading">'+ countries[i].event +'</h1>' +
+            '<h1 id="firstHeading" class="firstHeading">'+ places[i][1] +'</h1>' +
             '<div id="bodyContent">' +
-            "<h4>Location: " + countries[i].location +'</h4>' +
-            "<h4>Date: " + countries[i].date +'</h4>' +
-            '<h4>More information: <a href="'+ countries[i].link + '">Take me to their website!</a>' +
+            "<h4>Location: " + places[i][0] +'</h4>' +
+            "<h4>Date: " + places[i][2] +'</h4>' +
+            '<h4>More information: <a href="'+ places[i][3] + '">Take me to their website!</a>' +
             "</h4>" +
             "</div>" +
             "</div>"

@@ -16,7 +16,7 @@
   {% for place in info %}
   {% if place['mode'] == "In-Person Only" %}
     <script>
-        places.push("{{ place['loc'] }}");
+        places.push(["{{ place['loc'] }}", "{{ place['hack'] }}", "{{ place['date'] }}", "{{ place['hack_url'] }}"]);
     </script>
   {% endif %}
   {% endfor %}
