@@ -33,11 +33,6 @@ def index():
 # Route for the map page
 @app.route('/map')
 def map():
-    """
-    Loads profile dynamically from the JSON file and serves profile page.
-    
-    If profile could not be found, redirects to the landing page.
-    """
     data = load_info_from_json('run_results.json')
     info = data["data"]
     return render_template('mymap.html', info=info, url=os.getenv("URL"), API_KEY=os.getenv("API_KEY"))
