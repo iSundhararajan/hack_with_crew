@@ -33,8 +33,8 @@ def index():
 # Route for the map page
 @app.route('/map')
 def map():
-    data = load_info_from_json('dataset.log')
-    print(data)
+    data = load_info_from_json('dataset.json')
+    # print(data)
     return render_template('mymap.html', info=data, url=os.getenv("URL"), API_KEY=os.getenv("API_KEY"))
 
 # Route for the contact page
