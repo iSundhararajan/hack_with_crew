@@ -26,11 +26,10 @@
     let API_KEY = '{{ API_KEY }}';
   </script>
   {% for place in info %}
-  {% if place['mode'] == "In-Person Only" %}
     <script>
         places.push(["{{ place['loc'] }}", "{{ place['hack'] }}", "{{ place['date'] }}", "{{ place['hack_url'] }}"]);
+        console.log(places)
     </script>
-  {% endif %}
   {% endfor %}
   <div id="googleMap">
 

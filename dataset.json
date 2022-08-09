@@ -1,0 +1,176 @@
+[
+  {
+    "hack_url": "https://pennapps.com",
+    "hack": "PennApps XXIII",
+    "date": "Sep 2nd - 4th",
+    "loc": "Philadelphia, Pennsylvania"
+  },
+  {
+    "hack_url": "http://hacksmu.org/",
+    "hack": "HackSMU IV",
+    "date": "Sep 16th - 18th",
+    "loc": "Dallas, Texas"
+  },
+  {
+    "hack_url": "https://hackthenorth.com/",
+    "hack": "Hack the North",
+    "date": "Sep 16th - 18th",
+    "loc": "Waterloo, Canada"
+  },
+  {
+    "hack_url": "https://www.hackthemountain.tech/",
+    "hack": "Hack The Mountains 3.O",
+    "date": "Sep 17th - 18th",
+    "loc": "Faridabad, Delhi"
+  },
+  {
+    "hack_url": "https://columbiadivhacks.com/",
+    "hack": "DivHacks",
+    "date": "Sep 23rd - 24th",
+    "loc": "New York City, New York"
+  },
+  {
+    "hack_url": "https://hack.rice.edu/",
+    "hack": "HackRice 12",
+    "date": "Sep 23rd - 25th",
+    "loc": "Houston, Texas"
+  },
+  {
+    "hack_url": "https://losaltoshacks.com",
+    "hack": "Los Altos hacks VI",
+    "date": "Sep 24th",
+    "loc": "Sunnyvale, California"
+  },
+  {
+    "hack_url": "https://www.hackumbc.org/",
+    "hack": "hackUMBC",
+    "date": "Oct 1st - 2nd",
+    "loc": "Baltimore, Maryland"
+  },
+  {
+    "hack_url": "https://dandyhacks.net/",
+    "hack": "DandyHacks",
+    "date": "Oct 14th - 16th",
+    "loc": "Rochester, New York"
+  },
+  {
+    "hack_url": "https://mhacks.org",
+    "hack": "MHacks",
+    "date": "Oct 14th - 16th",
+    "loc": "Ann Arbor, Michigan"
+  },
+  {
+    "hack_url": "https://hacktx.com",
+    "hack": "HackTX",
+    "date": "Oct 15th - 16th",
+    "loc": "Austin , Texas"
+  },
+  {
+    "hack_url": "https://gotechnica.org/",
+    "hack": "Technica",
+    "date": "Oct 15th - 16th",
+    "loc": "College Park, Maryland"
+  },
+  {
+    "hack_url": "https://untnsbepresident.wixsite.com/my-site",
+    "hack": "UNT NSBEHack",
+    "date": "Oct 21st - 22nd",
+    "loc": "Denton, Texas"
+  },
+  {
+    "hack_url": "https://dubhacks.co",
+    "hack": "DubHacks",
+    "date": "Oct 22nd - 23rd",
+    "loc": "Seattle, Washington"
+  },
+  {
+    "hack_url": "https://makeuc.io/",
+    "hack": "MakeUC",
+    "date": "Oct 22nd - 23rd",
+    "loc": "Cincinnati, Ohio"
+  },
+  {
+    "hack_url": "https://hackman.im/",
+    "hack": "hackMan",
+    "date": "Oct 28th - 30th",
+    "loc": "Ramsey, Isle of Man"
+  },
+  {
+    "hack_url": "https://uhcode.red",
+    "hack": "CodeRed Odyssey",
+    "date": "Oct 29th - 30th",
+    "loc": "Houston, Texas"
+  },
+  {
+    "hack_url": "https://organize.mlh.io/participants/events/8321-techtogether-boston",
+    "hack": "TechTogether Boston",
+    "date": "Oct 29th - 30th",
+    "loc": "Boston, Massachusetts"
+  },
+  {
+    "hack_url": "https://www.hacknc.com",
+    "hack": "HackNC",
+    "date": "Nov 4th - 6th",
+    "loc": "Chapel Hill, North Carolina"
+  },
+  {
+    "hack_url": "https://hackthisfall.tech/",
+    "hack": "Hack This Fall",
+    "date": "Nov 4th - 6th",
+    "loc": "Delhi NCR, India"
+  },
+  {
+    "hack_url": "http://hackwestern.com/",
+    "hack": "Hack Western 9",
+    "date": "Nov 18th - 20th",
+    "loc": "London, Ontario"
+  },
+  {
+    "hack_url": "https://durhack.com",
+    "hack": "DurHack 2022.2",
+    "date": "Nov 19th - 20th",
+    "loc": "Durham, United Kingdom"
+  },
+  {
+    "hack_url": "https://hackbrunel.com/",
+    "hack": "Hack Brunel",
+    "date": "Nov 19th - 20th",
+    "loc": "London, United Kingdom "
+  },
+  {
+    "hack_url": "https://organize.mlh.io/participants/events/8357-techtogether-seattle",
+    "hack": "TechTogether Seattle",
+    "date": "Nov 19th - 20th",
+    "loc": "Seattle, Washington"
+  },
+  {
+    "hack_url": "https://conuhacks.io/",
+    "hack": "ConUHacks VII",
+    "date": "Jan 21st - 22nd",
+    "loc": "Montreal, Quebec"
+  },
+  {
+    "hack_url": "http://tamuhack.com/",
+    "hack": "TAMUhack",
+    "date": "Jan 28th - 29th",
+    "loc": "College Station, Texas"
+  },
+  {
+    "hack_url": "https://8.ugahacks.com/",
+    "hack": "UGAHacks 8",
+    "date": "Feb 3rd - 5th",
+    "loc": "Athens, Georgia"
+  },
+  {
+    "hack_url": "https://hacklytics.io/",
+    "hack": "Hacklytics 2023",
+    "date": "Feb 10th - 12th",
+    "loc": "Atlanta, Georgia"
+  },
+  {
+    "hack_url": "https://university.roughdraft.vc/rdv-hacks",
+    "hack": "RDV Hacks",
+    "date": "Aug 6th - 7th",
+    "loc": "New York City, New York"
+  }
+]
